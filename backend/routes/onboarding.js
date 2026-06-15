@@ -213,7 +213,7 @@ router.post('/complete', validateOnboardingData, handleValidationErrors, asyncHa
       },
       farmingProfile: {
         experienceLevel: personalInfo.farmingExperience || 'beginner',
-        farmingType: 'mixed',
+        farmingType: 'mixed_farming',
         totalFarmArea: {
           value: farmBoundary.area,
           unit: 'hectares'

@@ -70,8 +70,8 @@ const validateRegistration = [
     .withMessage('Experience level must be one of: beginner, intermediate, experienced, expert'),
   
   body('farmingProfile.farmingType')
-    .isIn(['subsistence', 'commercial', 'organic', 'mixed'])
-    .withMessage('Invalid farming type'),
+    .isIn(['crop_only', 'livestock_only', 'mixed_farming', 'organic', 'subsistence', 'commercial'])
+    .withMessage('Farming type must be one of: crop_only, livestock_only, mixed_farming, organic, subsistence, commercial'),
   
   body('preferences.language')
     .optional()

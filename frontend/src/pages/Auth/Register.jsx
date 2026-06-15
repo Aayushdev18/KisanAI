@@ -48,7 +48,9 @@ const Register = () => {
     { value: 'subsistence', label: 'Subsistence Farming', emoji: '🏠' },
     { value: 'commercial', label: 'Commercial Farming', emoji: '🏭' },
     { value: 'organic', label: 'Organic Farming', emoji: '🌿' },
-    { value: 'mixed', label: 'Mixed Farming', emoji: '🔄' }
+    { value: 'mixed_farming', label: 'Mixed Farming', emoji: '🔄' },
+    { value: 'crop_only', label: 'Crop Only', emoji: '🌾' },
+    { value: 'livestock_only', label: 'Livestock Only', emoji: '🐄' }
   ]
 
   const cropOptions = [
