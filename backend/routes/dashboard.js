@@ -127,9 +127,17 @@ router.get('/overview', authenticateUser, asyncHandler(async (req, res) => {
         location: primaryFarm.location.address,
         area: primaryFarm.farmInfo.totalArea
       },
-      weather: {
+      weather: weatherData ? {
         ...weatherData,
         location: weatherData.location || {
+          name: `${lat.toFixed(4)}, ${lon.toFixed(4)}`,
+          country: 'Coordinates'
+        }
+      } : {
+        current: null,
+        forecast: [],
+        alerts: [],
+        location: {
           name: `${lat.toFixed(4)}, ${lon.toFixed(4)}`,
           country: 'Coordinates'
         }
