@@ -197,7 +197,7 @@ const getSSLConfig = () => {
 
 // Start server
 const PORT = process.env.PORT || 5000;
-const HOST = process.env.HOST || 'localhost';
+const HOST = process.env.HOST || '0.0.0.0';
 const SSL_ENABLED = process.env.SSL_ENABLED === 'true';
 const SSL_PORT = process.env.SSL_PORT || 5001;
 
