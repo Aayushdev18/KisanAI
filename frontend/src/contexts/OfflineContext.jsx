@@ -96,7 +96,7 @@ export const OfflineProvider = ({ children }) => {
 
   const loadOfflineData = () => {
     try {
-      const stored = localStorage.getItem('agrisphere_offline_data')
+      const stored = localStorage.getItem('kisanai_offline_data')
       if (stored) {
         setOfflineData(JSON.parse(stored))
       }
@@ -109,7 +109,7 @@ export const OfflineProvider = ({ children }) => {
     try {
       const newOfflineData = { ...offlineData, [key]: data }
       setOfflineData(newOfflineData)
-      localStorage.setItem('agrisphere_offline_data', JSON.stringify(newOfflineData))
+      localStorage.setItem('kisanai_offline_data', JSON.stringify(newOfflineData))
     } catch (error) {
       console.error('Failed to save offline data:', error)
     }
@@ -124,17 +124,17 @@ export const OfflineProvider = ({ children }) => {
       const newOfflineData = { ...offlineData }
       delete newOfflineData[key]
       setOfflineData(newOfflineData)
-      localStorage.setItem('agrisphere_offline_data', JSON.stringify(newOfflineData))
+      localStorage.setItem('kisanai_offline_data', JSON.stringify(newOfflineData))
     } else {
       setOfflineData({})
-      localStorage.removeItem('agrisphere_offline_data')
+      localStorage.removeItem('kisanai_offline_data')
     }
   }
 
   const addToSyncQueue = (action) => {
     const newQueue = [...syncQueue, { ...action, timestamp: Date.now() }]
     setSyncQueue(newQueue)
-    localStorage.setItem('agrisphere_sync_queue', JSON.stringify(newQueue))
+    localStorage.setItem('kisanai_sync_queue', JSON.stringify(newQueue))
   }
 
   const syncOfflineData = async () => {
@@ -161,7 +161,7 @@ export const OfflineProvider = ({ children }) => {
     )
     
     setSyncQueue(remainingQueue)
-    localStorage.setItem('agrisphere_sync_queue', JSON.stringify(remainingQueue))
+    localStorage.setItem('kisanai_sync_queue', JSON.stringify(remainingQueue))
 
     if (successfulSyncs.length > 0) {
       console.log(`Successfully synced ${successfulSyncs.length} items`)

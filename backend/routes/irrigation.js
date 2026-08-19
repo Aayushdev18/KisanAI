@@ -1,5 +1,5 @@
 /**
- * Irrigation Management API Routes for AgriSphere
+ * Irrigation Management API Routes for KisanAI
  * Provides smart irrigation recommendations and logging
  */
 

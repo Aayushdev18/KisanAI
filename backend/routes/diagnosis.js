@@ -1,5 +1,5 @@
 /**
- * Crop Health Diagnosis Routes for AgriSphere
+ * Crop Health Diagnosis Routes for KisanAI
  * Handles disease detection, pest identification, treatment recommendations, and diagnosis tracking
  * Core functionality for AI-powered agricultural assistance
  */
@@ -366,7 +366,7 @@ router.post('/analyze', authenticateUser, [
       analysisMetadata: {
         imageCount: imageFiles.length,
         processingTime: '2-3 seconds',
-        model: analysisResults.apiUsed || 'AgriSphere-AI',
+        model: analysisResults.apiUsed || 'KisanAI-AI',
         dataSource: analysisResults.dataSource || 'unknown',
         isRealAPI: analysisResults.dataSource === 'openepi_real'
       }

@@ -1,5 +1,5 @@
 /**
- * Global Error Handling Middleware for AgriSphere Backend
+ * Global Error Handling Middleware for KisanAI Backend
  * Provides consistent error responses and logging for production use
  */
 

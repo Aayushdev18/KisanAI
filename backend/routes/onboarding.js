@@ -1,5 +1,5 @@
 /**
- * Onboarding Routes for AgriSphere
+ * Onboarding Routes for KisanAI
  * Handles the complete user onboarding flow including user registration,
  * farm setup, and initial data collection
  */
@@ -364,7 +364,7 @@ router.post('/complete', validateOnboardingData, handleValidationErrors, asyncHa
 
     // Send success response
     res.status(201).json(success(
-      'Onboarding completed successfully! Welcome to AgriSphere!',
+      'Onboarding completed successfully! Welcome to KisanAI!',
       {
         user: userResponse,
         farm: farmResponse,

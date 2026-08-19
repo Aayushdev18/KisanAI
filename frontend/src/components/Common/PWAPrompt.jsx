@@ -15,7 +15,7 @@ const PWAPrompt = () => {
 
   // Check if user has already dismissed the prompt
   useEffect(() => {
-    const dismissed = localStorage.getItem('agrisphere_pwa_dismissed')
+    const dismissed = localStorage.getItem('kisanai_pwa_dismissed')
     if (dismissed) {
       setDismissed(true)
     }
@@ -42,7 +42,7 @@ const PWAPrompt = () => {
   const handleDismiss = () => {
     setShowPrompt(false)
     setDismissed(true)
-    localStorage.setItem('agrisphere_pwa_dismissed', 'true')
+    localStorage.setItem('kisanai_pwa_dismissed', 'true')
   }
 
   const handleRemindLater = () => {
@@ -99,7 +99,7 @@ const PWAPrompt = () => {
 
               <div>
                 <h2 className="text-xl font-bold mb-1">
-                  Install AgriSphere
+                  Install KisanAI
                 </h2>
                 <p className="text-sm opacity-90">
                   Get the full farming experience
@@ -162,7 +162,7 @@ const PWAPrompt = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="w-5 h-5 bg-primary-500 text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                    <span>Find AgriSphere on your home screen</span>
+                    <span>Find KisanAI on your home screen</span>
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const PWAPrompt = () => {
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold py-4 px-6 rounded-2xl shadow-lg flex items-center justify-center space-x-2"
               >
                 <ArrowDownIcon className="w-5 h-5" />
-                <span>Install AgriSphere</span>
+                <span>Install KisanAI</span>
               </motion.button>
 
               <div className="flex space-x-3">

@@ -109,7 +109,7 @@ const createRateLimiter = (config) => {
   if (redisClient) {
     rateLimiterOptions.store = new RedisStore({
       client: redisClient,
-      prefix: 'agrisphere:rate_limit:'
+      prefix: 'kisanai:rate_limit:'
     })
   }
 

@@ -1,5 +1,5 @@
 /**
- * Crop Health API Service for AgriSphere
+ * Crop Health API Service for KisanAI
  * Provides crop disease detection, pest identification, and health monitoring
  * Integrates with image analysis and agricultural databases
  */
@@ -204,7 +204,7 @@ class CropHealthApiService {
       // Fallback to enhanced mock analysis
       const mockResult = this.generateEnhancedMockDiagnosisResult(cropType, imagePath);
       mockResult.dataSource = 'mock_enhanced';
-      mockResult.apiUsed = 'AgriSphere Mock AI';
+      mockResult.apiUsed = 'KisanAI Mock AI';
       
       logger.info('Crop image analysis completed (mock)', { cropType });
       return mockResult;
@@ -274,7 +274,7 @@ class CropHealthApiService {
           headers: {
             'Content-Type': 'image/jpeg',
             'Authorization': `Bearer ${token}`,
-            'User-Agent': 'AgriSphere/1.0'
+            'User-Agent': 'KisanAI/1.0'
           },
           timeout: this.openEpiConfig.timeout
         }
@@ -819,7 +819,7 @@ class CropHealthApiService {
       metadata: {
         analysisDate: new Date(),
         apiVersion: '1.0',
-        model: 'AgriSphere-MockAI',
+        model: 'KisanAI-MockAI',
         processingTime: `${(Math.random() * 2 + 1).toFixed(1)} seconds`
       }
     };

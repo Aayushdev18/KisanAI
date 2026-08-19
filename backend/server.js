@@ -1,5 +1,5 @@
 /**
- * AgriSphere Backend Server
+ * KisanAI Backend Server
  * Main entry point for the AI-powered digital agronomist application
  */
 
@@ -208,7 +208,7 @@ if (SSL_ENABLED && sslConfig) {
   const httpsServer = https.createServer(sslConfig, app);
   
   httpsServer.listen(SSL_PORT, HOST, () => {
-    logger.info(`AgriSphere Backend HTTPS running on https://${HOST}:${SSL_PORT} in ${process.env.NODE_ENV} mode`);
+    logger.info(`KisanAI Backend HTTPS running on https://${HOST}:${SSL_PORT} in ${process.env.NODE_ENV} mode`);
     
     // Initialize notification service after server starts
     const notificationService = require('./services/notificationService');
@@ -230,7 +230,7 @@ if (SSL_ENABLED && sslConfig) {
 } else {
   // Create HTTP server
   const server = app.listen(PORT, HOST, () => {
-    logger.info(`AgriSphere Backend HTTP running on http://${HOST}:${PORT} in ${process.env.NODE_ENV} mode`);
+    logger.info(`KisanAI Backend HTTP running on http://${HOST}:${PORT} in ${process.env.NODE_ENV} mode`);
     
     // Initialize notification service after server starts
     const notificationService = require('./services/notificationService');

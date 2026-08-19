@@ -102,7 +102,7 @@ const Settings = () => {
             {t('settings')} ⚙️
           </h1>
           <p className="text-gray-600">
-            Customize your AgriSphere experience
+            Customize your KisanAI experience
           </p>
         </motion.div>
 
@@ -339,7 +339,7 @@ const Settings = () => {
         <motion.div variants={itemVariants} className="mt-8 text-center">
           <div className="card bg-gradient-to-r from-primary-50 to-sky-50 border-primary-200">
             <div className="text-center">
-              <h3 className="font-semibold text-gray-800 mb-2">AgriSphere v1.0.0</h3>
+              <h3 className="font-semibold text-gray-800 mb-2">KisanAI v1.0.0</h3>
               <p className="text-sm text-gray-600 mb-4">
                 AI-powered farming assistant for smallholder farmers
               </p>

@@ -36,7 +36,7 @@ class EnvironmentConfig {
       // Database Configuration
       database: {
         mongodb: {
-          uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/agrisphere',
+          uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/kisanai',
           options: {
             useNewUrlParser: true,
             useUnifiedTopology: true,
@@ -65,8 +65,8 @@ class EnvironmentConfig {
           secret: process.env.JWT_SECRET || this.generateDefaultSecret(),
           expiresIn: process.env.JWT_EXPIRES_IN || '7d',
           refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '30d',
-          issuer: process.env.JWT_ISSUER || 'agrisphere',
-          audience: process.env.JWT_AUDIENCE || 'agrisphere-users'
+          issuer: process.env.JWT_ISSUER || 'kisanai',
+          audience: process.env.JWT_AUDIENCE || 'kisanai-users'
         },
         bcrypt: {
           rounds: parseInt(process.env.BCRYPT_ROUNDS) || 12
@@ -214,7 +214,7 @@ class EnvironmentConfig {
 
       // Application Metadata
       app: {
-        name: process.env.APP_NAME || 'AgriSphere',
+        name: process.env.APP_NAME || 'KisanAI',
         version: process.env.APP_VERSION || '1.0.0',
         environment: this.env,
         debug: this.parseBoolean(process.env.DEBUG, this.isDevelopment()),
@@ -273,7 +273,7 @@ class EnvironmentConfig {
         ...config.database,
         mongodb: {
           ...config.database.mongodb,
-          uri: process.env.MONGODB_TEST_URI || 'mongodb://localhost:27017/agrisphere_test'
+          uri: process.env.MONGODB_TEST_URI || 'mongodb://localhost:27017/kisanai_test'
         }
       },
       auth: {

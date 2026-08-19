@@ -1,5 +1,5 @@
 /**
- * Farm Model for AgriSphere
+ * Farm Model for KisanAI
  * Stores farm boundary data, soil information, crop details, and field management data
  * Supports polygon boundaries for accurate field mapping and multi-field farms
  */

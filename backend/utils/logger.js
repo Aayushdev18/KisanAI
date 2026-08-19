@@ -1,5 +1,5 @@
 /**
- * Logging utility for AgriSphere Backend
+ * Logging utility for KisanAI Backend
  * Provides structured logging with different levels
  */
 

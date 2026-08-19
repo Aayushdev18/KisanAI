@@ -63,7 +63,7 @@ const Welcome = ({ onNext, onboardingData, updateData }) => {
               <span className="text-4xl">🌾</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary-600 via-green-600 to-blue-600 bg-clip-text text-transparent mb-4">
-              Welcome to AgriSphere
+              Welcome to KisanAI
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Your AI-powered digital agronomist is here to help you grow better crops, 

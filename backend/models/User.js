@@ -1,5 +1,5 @@
 /**
- * User Model for AgriSphere
+ * User Model for KisanAI
  * Stores farmer profile information, preferences, and authentication data
  * Designed for low-literacy users with simple but comprehensive data structure
  */

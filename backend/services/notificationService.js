@@ -1,5 +1,5 @@
 /**
- * Notification Service for AgriSphere
+ * Notification Service for KisanAI
  * Handles automated irrigation reminders and crop management notifications
  */
 

@@ -1,6 +1,6 @@
-# HTTPS Setup Guide for AgriSphere Backend
+# HTTPS Setup Guide for KisanAI Backend
 
-This guide explains how to enable HTTPS support for the AgriSphere backend API.
+This guide explains how to enable HTTPS support for the KisanAI backend API.
 
 ## 🚀 Quick Start (Development)
 

@@ -84,13 +84,13 @@ const OnboardingFlow = () => {
   useEffect(() => {
     if (dataLoaded) {
       console.log('Saving onboarding data to localStorage:', onboardingData)
-      localStorage.setItem('agrisphere_onboarding_data', JSON.stringify(onboardingData))
+      localStorage.setItem('kisanai_onboarding_data', JSON.stringify(onboardingData))
     }
   }, [onboardingData, dataLoaded])
 
   // Load saved progress
   useEffect(() => {
-    const saved = localStorage.getItem('agrisphere_onboarding_data')
+    const saved = localStorage.getItem('kisanai_onboarding_data')
     if (saved) {
       try {
         const parsedData = JSON.parse(saved)
@@ -189,8 +189,8 @@ const OnboardingFlow = () => {
       console.log('Completing onboarding with data:', requestData)
       console.log('User authenticated:', isAuthenticated)
       console.log('User data:', user)
-      console.log('Token exists:', !!localStorage.getItem('agrisphere_token'))
-      console.log('Token value:', localStorage.getItem('agrisphere_token')?.substring(0, 20) + '...')
+      console.log('Token exists:', !!localStorage.getItem('kisanai_token'))
+      console.log('Token value:', localStorage.getItem('kisanai_token')?.substring(0, 20) + '...')
 
       let response
       if (isAuthenticated && user) {
@@ -217,11 +217,11 @@ const OnboardingFlow = () => {
       if (data.status === 'success') {
         // Store authentication token if it's a new user
         if (!isAuthenticated && data.data.token) {
-          localStorage.setItem('agrisphere_token', data.data.token)
+          localStorage.setItem('kisanai_token', data.data.token)
         }
         
         // Clear onboarding data
-        localStorage.removeItem('agrisphere_onboarding_data')
+        localStorage.removeItem('kisanai_onboarding_data')
         
         // Refresh user data to get updated onboarding status
         if (isAuthenticated && user) {
@@ -241,7 +241,7 @@ const OnboardingFlow = () => {
         console.log('Onboarding completed successfully:', data.message)
         
         // Show success toast
-        showToast('Farm setup completed successfully! Welcome to AgriSphere! 🎉', 'success')
+        showToast('Farm setup completed successfully! Welcome to KisanAI! 🎉', 'success')
         
         // Redirect to dashboard
         navigate('/dashboard')

@@ -31,7 +31,7 @@ if (fs.existsSync(CERT_PATH) && fs.existsSync(KEY_PATH)) {
 
 try {
   // Generate self-signed certificate using OpenSSL
-  const opensslCommand = `openssl req -x509 -newkey rsa:4096 -keyout "${KEY_PATH}" -out "${CERT_PATH}" -days 365 -nodes -subj "/C=US/ST=Development/L=Local/O=AgriSphere/OU=Development/CN=localhost"`;
+  const opensslCommand = `openssl req -x509 -newkey rsa:4096 -keyout "${KEY_PATH}" -out "${CERT_PATH}" -days 365 -nodes -subj "/C=US/ST=Development/L=Local/O=KisanAI/OU=Development/CN=localhost"`;
   
   console.log('🔧 Running OpenSSL command...');
   execSync(opensslCommand, { stdio: 'inherit' });

@@ -189,7 +189,7 @@ const ProfileCompletion = ({ onComplete, onBack, onboardingData, updateData, isL
             Complete Your Profile 👤
           </h1>
           <p className="text-lg text-gray-600 max-w-xl mx-auto">
-            Just a few more details to create your AgriSphere account and start your farming journey!
+            Just a few more details to create your KisanAI account and start your farming journey!
           </p>
         </motion.div>
 

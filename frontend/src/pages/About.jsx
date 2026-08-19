@@ -119,7 +119,7 @@ const About = () => {
               Cultivating the Future
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
-              The Story of AgriSphere
+              The Story of KisanAI
             </p>
           </motion.div>
         </motion.div>
@@ -220,10 +220,10 @@ const About = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Our Solution: AgriSphere, Your AI-Powered Digital Agronomist
+              Our Solution: KisanAI, Your AI-Powered Digital Agronomist
             </h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              We believe that technology can bridge this information gap. That's why we created AgriSphere, 
+              We believe that technology can bridge this information gap. That's why we created KisanAI, 
               an all-in-one digital toolkit designed to put the power of data directly into the hands of farmers.
             </p>
           </motion.div>
@@ -232,7 +232,7 @@ const About = () => {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Mission</h3>
             <p className="text-lg md:text-xl opacity-90 max-w-4xl mx-auto">
               To transform complex environmental data into clear, simple, and actionable advice that is tailored 
-              to a farmer's specific field and needs. We've designed AgriSphere to be incredibly easy to use, 
+              to a farmer's specific field and needs. We've designed KisanAI to be incredibly easy to use, 
               with a visual, icon-based interface and support for multiple languages.
             </p>
           </motion.div>
@@ -250,10 +250,10 @@ const About = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              How AgriSphere Works for You
+              How KisanAI Works for You
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              From the moment you open the app, AgriSphere becomes your trusted partner in the field.
+              From the moment you open the app, KisanAI becomes your trusted partner in the field.
             </p>
           </motion.div>
 
@@ -314,7 +314,7 @@ const About = () => {
               Our Purpose: Seeding a More Sustainable Future
             </h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
-              AgriSphere is more than just an app; it's a commitment to a better future. We are driven by the belief 
+              KisanAI is more than just an app; it's a commitment to a better future. We are driven by the belief 
               that empowering farmers is the key to solving some of the world's most pressing challenges.
             </p>
           </motion.div>
@@ -352,7 +352,7 @@ const About = () => {
             <div className="bg-gradient-to-br from-emerald-500 to-green-600 p-8 md:p-12 rounded-3xl text-white">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-lg md:text-xl opacity-90 max-w-4xl mx-auto mb-6">
-                By joining hands with NGOs, governments, and corporations, we aim to bring AgriSphere to millions 
+                By joining hands with NGOs, governments, and corporations, we aim to bring KisanAI to millions 
                 of farmers at little to no cost, creating a truly global yet locally-attuned agricultural support system.
               </p>
               <p className="text-xl md:text-2xl font-bold">
@@ -377,7 +377,7 @@ const About = () => {
               Ready to Join the Agricultural Revolution?
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Experience the future of farming with AgriSphere's AI-powered tools
+              Experience the future of farming with KisanAI's AI-powered tools
             </p>
             <div className="flex justify-center">
               <a

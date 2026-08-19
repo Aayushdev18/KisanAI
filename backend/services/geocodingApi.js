@@ -1,5 +1,5 @@
 /**
- * Geocoding API Service for AgriSphere
+ * Geocoding API Service for KisanAI
  * Provides location services, address validation, and geographic data through OpenEPI
  * Refactored to use centralized OpenEPI service
  */

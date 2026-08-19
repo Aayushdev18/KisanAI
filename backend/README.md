@@ -1,4 +1,4 @@
-# AgriSphere Backend
+# KisanAI Backend
 
 AI-powered digital agronomist backend for smallholder farmers. This RESTful API provides comprehensive agricultural services including crop health diagnosis, irrigation management, farm planning, and agricultural data analytics.
 
@@ -31,8 +31,8 @@ AI-powered digital agronomist backend for smallholder farmers. This RESTful API 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-org/agrisphere-backend.git
-   cd agrisphere-backend
+   git clone https://github.com/your-org/kisanai-backend.git
+   cd kisanai-backend
    ```
 
 2. **Install dependencies**
@@ -49,7 +49,7 @@ AI-powered digital agronomist backend for smallholder farmers. This RESTful API 
    ```env
    NODE_ENV=development
    PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/agrisphere
+   MONGODB_URI=mongodb://localhost:27017/kisanai
    JWT_SECRET=your-super-secret-jwt-key
    
    # API Keys (obtain from respective services)
@@ -261,20 +261,20 @@ CMD ["npm", "start"]
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: agrisphere-backend
+  name: kisanai-backend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: agrisphere-backend
+      app: kisanai-backend
   template:
     metadata:
       labels:
-        app: agrisphere-backend
+        app: kisanai-backend
     spec:
       containers:
       - name: backend
-        image: agrisphere/backend:latest
+        image: kisanai/backend:latest
         ports:
         - containerPort: 5000
         env:
@@ -283,7 +283,7 @@ spec:
         - name: MONGODB_URI
           valueFrom:
             secretKeyRef:
-              name: agrisphere-secrets
+              name: kisanai-secrets
               key: mongodb-uri
         livenessProbe:
           httpGet:
@@ -449,8 +449,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🆘 Support
 
 For support and questions:
-- Email: support@agrisphere.com
-- Documentation: https://docs.agrisphere.com
+- Email: support@kisanai.com
+- Documentation: https://docs.kisanai.com
 - Issues: GitHub Issues page
 
 ## 🙏 Acknowledgments
@@ -462,4 +462,4 @@ For support and questions:
 
 ---
 
-**AgriSphere** - Empowering smallholder farmers with AI-driven agricultural insights.
+**KisanAI** - Empowering smallholder farmers with AI-driven agricultural insights.

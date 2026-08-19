@@ -1,5 +1,5 @@
 /**
- * Smart Irrigation Advisor Service for AgriSphere
+ * Smart Irrigation Advisor Service for KisanAI
  * Calculates irrigation needs using evapotranspiration, weather data, and soil conditions
  */
 
@@ -145,7 +145,7 @@ class IrrigationService {
               altitude: 0
             },
             headers: {
-              'User-Agent': 'AgriSphere/1.0'
+              'User-Agent': 'KisanAI/1.0'
             },
             timeout: 10000
           }
@@ -189,7 +189,7 @@ class IrrigationService {
             lon: longitude
           },
           headers: {
-            'User-Agent': 'AgriSphere/1.0'
+            'User-Agent': 'KisanAI/1.0'
           },
           timeout: 10000
         }
@@ -236,7 +236,7 @@ class IrrigationService {
         `https://api.openepi.io/soil/property?${params.toString()}`,
         {
           headers: {
-            'User-Agent': 'AgriSphere/1.0'
+            'User-Agent': 'KisanAI/1.0'
           },
           timeout: 10000
         }

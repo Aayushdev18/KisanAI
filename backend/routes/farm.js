@@ -1,5 +1,5 @@
 /**
- * Farm Management Routes for AgriSphere
+ * Farm Management Routes for KisanAI
  * Handles farm creation, field management, soil data, and farm analytics
  * Designed for comprehensive farm management and optimization
  */

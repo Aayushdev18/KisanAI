@@ -231,7 +231,7 @@ const Home = () => {
               Ready to Transform Your Farming?
             </h2>
             <p className="text-lg mb-8 text-white/90">
-              Join AgriSphere today and experience the future of agriculture
+              Join KisanAI today and experience the future of agriculture
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

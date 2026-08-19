@@ -1,9 +1,9 @@
 {
-  "name": "agrisphere-frontend",
+  "name": "kisanai-frontend",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "AgriSphere Frontend - AI-powered digital agronomist for smallholder farmers",
+  "description": "KisanAI Frontend - AI-powered digital agronomist for smallholder farmers",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",

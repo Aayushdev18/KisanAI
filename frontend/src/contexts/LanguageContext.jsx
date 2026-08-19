@@ -136,7 +136,7 @@ const TRANSLATIONS = {
     welcomeBack: 'Welcome Back',
     
     // App specific
-    appName: 'AgriSphere',
+    appName: 'KisanAI',
     tagline: 'AI-powered farming assistant',
     cropHealth: 'Crop Health',
     waterManagement: 'Water Management',
@@ -162,7 +162,7 @@ const TRANSLATIONS = {
     planning: 'Planificación',
     login: 'Iniciar Sesión',
     register: 'Registrarse',
-    appName: 'AgriSphere',
+    appName: 'KisanAI',
     tagline: 'Asistente agrícola con IA',
     welcome: 'Bienvenido',
     translationMissing: 'Traducción faltante'
@@ -184,7 +184,7 @@ const TRANSLATIONS = {
     planning: 'Planification',
     login: 'Se Connecter',
     register: 'S\'inscrire',
-    appName: 'AgriSphere',
+    appName: 'KisanAI',
     tagline: 'Assistant agricole IA',
     welcome: 'Bienvenue',
     translationMissing: 'Traduction manquante'
@@ -206,7 +206,7 @@ const TRANSLATIONS = {
     planning: 'Mipango',
     login: 'Ingia',
     register: 'Jiandikishe',
-    appName: 'AgriSphere',
+    appName: 'KisanAI',
     tagline: 'Msaidizi wa kilimo wa AI',
     welcome: 'Karibu',
     translationMissing: 'Tafsiri haijatolewa'
@@ -219,7 +219,7 @@ export const LanguageProvider = ({ children }) => {
 
   // Load saved language preference on mount
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('agrisphere_language')
+    const savedLanguage = localStorage.getItem('kisanai_language')
     if (savedLanguage && SUPPORTED_LANGUAGES[savedLanguage]) {
       setCurrentLanguage(savedLanguage)
     } else {
@@ -253,7 +253,7 @@ export const LanguageProvider = ({ children }) => {
       await new Promise(resolve => setTimeout(resolve, 300))
       
       setCurrentLanguage(languageCode)
-      localStorage.setItem('agrisphere_language', languageCode)
+      localStorage.setItem('kisanai_language', languageCode)
     } catch (error) {
       console.error('Failed to change language:', error)
     } finally {

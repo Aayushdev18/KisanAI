@@ -126,7 +126,7 @@ const Profile = () => {
           realAchievements.push({
             id: 4,
             title: 'Dedicated Farmer',
-            description: 'Been using AgriSphere for over a month',
+            description: 'Been using KisanAI for over a month',
             icon: '📱',
             earned: true
           });

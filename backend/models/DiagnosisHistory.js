@@ -1,5 +1,5 @@
 /**
- * DiagnosisHistory Model for AgriSphere
+ * DiagnosisHistory Model for KisanAI
  * Stores crop health diagnoses, disease detection results, and treatment recommendations
  * Essential for tracking crop health over time and building agricultural knowledge base
  */

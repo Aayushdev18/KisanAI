@@ -1,5 +1,5 @@
 /**
- * Soil API Service for AgriSphere
+ * Soil API Service for KisanAI
  * Provides soil data crucial for crop management and farming decisions through OpenEPI
  * Refactored to use centralized OpenEPI service
  */

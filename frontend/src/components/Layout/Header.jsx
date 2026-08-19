@@ -288,7 +288,7 @@ const Header = () => {
                       onClick={() => setIsMenuOpen(false)}
                       className="block w-full text-center py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-2xl transition-colors font-medium"
                     >
-                      About AgriSphere
+                      About KisanAI
                     </Link>
                     <Link
                       to="/login"

@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   }, [])
 
   const checkAuthStatus = async () => {
-    const token = localStorage.getItem('agrisphere_token')
+    const token = localStorage.getItem('kisanai_token')
     
     if (token) {
       try {
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
         const { token, user: userData } = response.data.data
         
         // Store token
-        localStorage.setItem('agrisphere_token', token)
+        localStorage.setItem('kisanai_token', token)
         apiService.setAuthToken(token)
         
         // Update state
@@ -87,7 +87,7 @@ export const AuthProvider = ({ children }) => {
         const { token, user: newUser } = response.data.data
         
         // Store token
-        localStorage.setItem('agrisphere_token', token)
+        localStorage.setItem('kisanai_token', token)
         apiService.setAuthToken(token)
         
         // Update state
@@ -126,7 +126,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   const clearAuth = () => {
-    localStorage.removeItem('agrisphere_token')
+    localStorage.removeItem('kisanai_token')
     apiService.clearAuthToken()
     setUser(null)
     setIsAuthenticated(false)
@@ -177,7 +177,7 @@ export const AuthProvider = ({ children }) => {
       
       if (response.data && response.data.token) {
         const { token } = response.data
-        localStorage.setItem('agrisphere_token', token)
+        localStorage.setItem('kisanai_token', token)
         apiService.setAuthToken(token)
         return { success: true }
       } else {
@@ -228,7 +228,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   // Helper functions
-  const getToken = () => localStorage.getItem('agrisphere_token')
+  const getToken = () => localStorage.getItem('kisanai_token')
   
   const isTokenExpired = () => {
     const token = getToken()

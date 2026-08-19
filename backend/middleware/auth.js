@@ -1,5 +1,5 @@
 /**
- * Authentication Middleware for AgriSphere
+ * Authentication Middleware for KisanAI
  * Centralized authentication and authorization for all protected routes
  * Includes role-based access control and request context management
  */

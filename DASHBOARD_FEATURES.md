@@ -1,4 +1,4 @@
-# 🌾 AgriSphere Dashboard - Feature Overview
+# 🌾 KisanAI Dashboard - Feature Overview
 
 ## ✨ **Modern Dashboard Design**
 

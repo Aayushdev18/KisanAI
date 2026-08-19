@@ -30,7 +30,7 @@ class ApiService {
     // Request interceptor for adding auth token
     this.client.interceptors.request.use(
       (config) => {
-        const token = localStorage.getItem('agrisphere_token')
+        const token = localStorage.getItem('kisanai_token')
         if (token) {
           config.headers.Authorization = `Bearer ${token}`
           console.log('Adding auth token to request:', config.url)
@@ -81,7 +81,7 @@ class ApiService {
             try {
               await this.refreshToken()
               // Retry the original request with new token
-              const token = localStorage.getItem('agrisphere_token')
+              const token = localStorage.getItem('kisanai_token')
               if (token) {
                 originalRequest.headers.Authorization = `Bearer ${token}`
                 return this.client(originalRequest)
@@ -160,7 +160,7 @@ class ApiService {
 
   // Auth error handling
   handleAuthError() {
-    localStorage.removeItem('agrisphere_token')
+    localStorage.removeItem('kisanai_token')
     // In a real app, you might want to redirect to login
     // window.location.href = '/login'
     console.log('Authentication failed, token removed')
@@ -168,7 +168,7 @@ class ApiService {
 
   // Token refresh
   async refreshToken() {
-    const token = localStorage.getItem('agrisphere_token')
+    const token = localStorage.getItem('kisanai_token')
     if (!token) {
       throw new Error('No token available for refresh')
     }
@@ -179,13 +179,13 @@ class ApiService {
       })
 
       if (response.data?.token) {
-        localStorage.setItem('agrisphere_token', response.data.token)
+        localStorage.setItem('kisanai_token', response.data.token)
         return response.data.token
       } else {
         throw new Error('Invalid refresh response')
       }
     } catch (error) {
-      localStorage.removeItem('agrisphere_token')
+      localStorage.removeItem('kisanai_token')
       throw error
     }
   }
@@ -338,16 +338,16 @@ class ApiService {
       id: Date.now().toString()
     }
 
-    const cachedRequests = JSON.parse(localStorage.getItem('agrisphere_offline_requests') || '[]')
+    const cachedRequests = JSON.parse(localStorage.getItem('kisanai_offline_requests') || '[]')
     cachedRequests.push(request)
-    localStorage.setItem('agrisphere_offline_requests', JSON.stringify(cachedRequests))
+    localStorage.setItem('kisanai_offline_requests', JSON.stringify(cachedRequests))
 
     return request.id
   }
 
   // Sync cached offline requests
   async syncOfflineRequests() {
-    const cachedRequests = JSON.parse(localStorage.getItem('agrisphere_offline_requests') || '[]')
+    const cachedRequests = JSON.parse(localStorage.getItem('kisanai_offline_requests') || '[]')
     
     if (cachedRequests.length === 0) {
       return { success: true, synced: 0, failed: 0 }
@@ -373,7 +373,7 @@ class ApiService {
     }
 
     // Keep only failed requests for retry
-    localStorage.setItem('agrisphere_offline_requests', JSON.stringify(failedRequests))
+    localStorage.setItem('kisanai_offline_requests', JSON.stringify(failedRequests))
 
     return { success: true, synced, failed }
   }

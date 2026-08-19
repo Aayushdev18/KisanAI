@@ -247,7 +247,7 @@ const Register = () => {
               <span className="text-2xl">🌾</span>
             </motion.div>
             <h1 className="text-2xl font-bold text-gray-800 mb-2">
-              Join AgriSphere
+              Join KisanAI
             </h1>
             <p className="text-gray-600">
               Create your farming assistant account

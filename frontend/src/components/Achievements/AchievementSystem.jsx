@@ -78,7 +78,7 @@ const ACHIEVEMENTS = {
   consistency_champion: {
     id: 'consistency_champion',
     title: 'Dedicated Farmer',
-    description: 'Use AgriSphere for 30 consecutive days',
+    description: 'Use KisanAI for 30 consecutive days',
     icon: FireIcon,
     rarity: 'epic',
     points: 750,

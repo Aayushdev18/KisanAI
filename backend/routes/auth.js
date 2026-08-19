@@ -1,5 +1,5 @@
 /**
- * Authentication Routes for AgriSphere
+ * Authentication Routes for KisanAI
  * Handles user registration, login, password management, and account verification
  * Designed for farmers in developing regions with simple mobile-first workflows
  */

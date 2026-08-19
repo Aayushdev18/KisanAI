@@ -1,5 +1,5 @@
 /**
- * Dashboard Routes for AgriSphere
+ * Dashboard Routes for KisanAI
  * Provides aggregated data for the main dashboard including weather, tasks, progress, and insights
  */
 

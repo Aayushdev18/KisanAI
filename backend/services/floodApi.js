@@ -1,5 +1,5 @@
 /**
- * Flood API Service for AgriSphere
+ * Flood API Service for KisanAI
  * Provides flood risk assessment, early warning systems, and agricultural impact analysis
  * Critical for protecting crops and planning in flood-prone areas
  */

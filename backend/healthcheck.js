@@ -1,5 +1,5 @@
 /**
- * Docker Health Check Script for AgriSphere Backend
+ * Docker Health Check Script for KisanAI Backend
  * Simple health check script used by Docker to verify container health
  */
 

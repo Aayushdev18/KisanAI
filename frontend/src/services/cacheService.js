@@ -30,7 +30,7 @@ class CacheService {
    */
   async initIndexedDB() {
     try {
-      this.db = await this.openDB('AgriSphereCache', 1)
+      this.db = await this.openDB('KisanAICache', 1)
     } catch (error) {
       console.warn('Failed to initialize IndexedDB:', error)
       this.db = null

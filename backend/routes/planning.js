@@ -1,5 +1,5 @@
 /**
- * Climate-Smart Crop Planning API Routes for AgriSphere
+ * Climate-Smart Crop Planning API Routes for KisanAI
  * Provides intelligent crop recommendations and seasonal planning
  */
 

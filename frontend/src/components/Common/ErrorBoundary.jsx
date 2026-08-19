@@ -50,7 +50,7 @@ class ErrorBoundary extends Component {
       userAgent: navigator.userAgent,
       url: window.location.href,
       timestamp: new Date().toISOString(),
-      userId: localStorage.getItem('agrisphere_user_id'),
+      userId: localStorage.getItem('kisanai_user_id'),
       buildVersion: import.meta.env.VITE_BUILD_VERSION || 'unknown'
     }
 
@@ -210,7 +210,7 @@ class ErrorBoundary extends Component {
               className="mt-6 pt-6 border-t border-gray-200"
             >
               <a
-                href="mailto:support@agrisphere.com"
+                href="mailto:support@kisanai.com"
                 className="inline-flex items-center space-x-2 text-sm text-primary-600 hover:text-primary-700 transition-colors"
               >
                 <ChatBubbleBottomCenterTextIcon className="w-4 h-4" />

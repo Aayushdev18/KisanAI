@@ -253,7 +253,7 @@ class NetworkRecovery {
    */
   getOfflineQueue() {
     try {
-      const queue = localStorage.getItem('agrisphere_offline_queue')
+      const queue = localStorage.getItem('kisanai_offline_queue')
       return queue ? JSON.parse(queue) : []
     } catch (error) {
       console.error('Error reading offline queue:', error)
@@ -266,7 +266,7 @@ class NetworkRecovery {
    */
   saveOfflineQueue(queue) {
     try {
-      localStorage.setItem('agrisphere_offline_queue', JSON.stringify(queue))
+      localStorage.setItem('kisanai_offline_queue', JSON.stringify(queue))
     } catch (error) {
       console.error('Error saving offline queue:', error)
     }
@@ -276,7 +276,7 @@ class NetworkRecovery {
    * Clear offline queue
    */
   clearOfflineQueue() {
-    localStorage.removeItem('agrisphere_offline_queue')
+    localStorage.removeItem('kisanai_offline_queue')
   }
 
   /**

@@ -1,5 +1,5 @@
 /**
- * OpenEPI API Service for AgriSphere
+ * OpenEPI API Service for KisanAI
  * Centralized service for all agricultural and environmental data through OpenEPI
  * Handles authentication, rate limiting, caching, and error handling
  */
@@ -33,7 +33,7 @@ class OpenEpiService {
       timeout: this.requestTimeout,
       headers: {
         'Content-Type': 'application/json',
-        'User-Agent': 'AgriSphere/1.0'
+        'User-Agent': 'KisanAI/1.0'
       }
     });
 
@@ -443,7 +443,7 @@ class OpenEpiService {
           'accept-language': 'en'
         },
         headers: {
-          'User-Agent': 'AgriSphere/1.0 (contact@agrisphere.com)'
+          'User-Agent': 'KisanAI/1.0 (contact@kisanai.com)'
         },
         timeout: 5000 // 5 second timeout
       });
@@ -736,7 +736,7 @@ class OpenEpiService {
           'accept-language': 'en'
         },
         headers: {
-          'User-Agent': 'AgriSphere/1.0 (contact@agrisphere.com)'
+          'User-Agent': 'KisanAI/1.0 (contact@kisanai.com)'
         },
         timeout: 10000 // 10 second timeout
       });
@@ -805,7 +805,7 @@ class OpenEpiService {
           'accept-language': 'en'
         },
         headers: {
-          'User-Agent': 'AgriSphere/1.0 (contact@agrisphere.com)'
+          'User-Agent': 'KisanAI/1.0 (contact@kisanai.com)'
         },
         timeout: 10000 // 10 second timeout
       });

@@ -1,4 +1,4 @@
-# 🌾 AgriSphere - AI-Powered Digital Agronomist
+# 🌾 KisanAI - AI-Powered Digital Agronomist
 
 > **Submission for the OpenEPI Hackathon 2025**
 
@@ -12,9 +12,9 @@ Smallholder farmers—the backbone of global food security—face unprecedented 
 - 🌡️ **Climate uncertainty** affecting traditional farming methods
 - 📱 **Limited access** to actionable agricultural intelligence
 
-## 🌍 The Solution: AgriSphere
+## 🌍 The Solution: KisanAI
 
-To address this challenge, we have developed **AgriSphere**, a web application that functions as an all-in-one digital toolkit for farmers. AgriSphere's core mission is to synthesize complex environmental data from OpenEPI's open datasets into simple, actionable advice tailored to a farmer's specific location.
+To address this challenge, we have developed **KisanAI**, a web application that functions as an all-in-one digital toolkit for farmers. KisanAI's core mission is to synthesize complex environmental data from OpenEPI's open datasets into simple, actionable advice tailored to a farmer's specific location.
 
 The application is designed for extreme simplicity, with a minimal-text, icon-driven interface and multi-language support to ensure maximum accessibility for users who may have limited literacy or technical expertise.
 
@@ -85,8 +85,8 @@ The application is designed for extreme simplicity, with a minimal-text, icon-dr
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/agrisphere/agrisphere.git](https://github.com/agrisphere/agrisphere.git)
-    cd agrisphere
+    git clone [https://github.com/kisanai/kisanai.git](https://github.com/kisanai/kisanai.git)
+    cd kisanai
     ```
 
 2.  **Install dependencies**

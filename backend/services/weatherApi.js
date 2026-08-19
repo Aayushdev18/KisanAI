@@ -1,5 +1,5 @@
 /**
- * Weather API Service for AgriSphere
+ * Weather API Service for KisanAI
  * Provides weather data critical for farming decisions through OpenEPI
  * Refactored to use centralized OpenEPI service
  */

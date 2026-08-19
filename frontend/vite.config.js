@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       manifest: {
-        name: 'AgriSphere - Digital Agronomist',
-        short_name: 'AgriSphere',
+        name: 'KisanAI - Digital Agronomist',
+        short_name: 'KisanAI',
         description: 'AI-powered digital agronomist for smallholder farmers',
         theme_color: '#22c55e',
         background_color: '#ffffff',

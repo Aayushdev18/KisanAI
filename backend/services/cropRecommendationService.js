@@ -1,5 +1,5 @@
 /**
- * Climate-Smart Crop Recommendation Service for AgriSphere
+ * Climate-Smart Crop Recommendation Service for KisanAI
  * Provides intelligent crop recommendations based on climate, soil, and market data
  */
 

@@ -1,5 +1,5 @@
 /**
- * IrrigationLog Model for AgriSphere
+ * IrrigationLog Model for KisanAI
  * Tracks irrigation activities, recommendations, and water management data
  */
 

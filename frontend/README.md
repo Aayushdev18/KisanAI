@@ -1,6 +1,6 @@
-# AgriSphere Frontend
+# KisanAI Frontend
 
-Modern, mobile-first React application for the AgriSphere platform - an AI-powered digital agronomist for smallholder farmers.
+Modern, mobile-first React application for the KisanAI platform - an AI-powered digital agronomist for smallholder farmers.
 
 ## 🌟 Features
 
@@ -58,7 +58,7 @@ Create a `.env` file in the frontend directory:
 
 ```env
 VITE_API_URL=http://localhost:5000/api
-VITE_APP_NAME=AgriSphere
+VITE_APP_NAME=KisanAI
 VITE_ENABLE_PWA=true
 ```
 
@@ -275,7 +275,7 @@ EXPOSE 80
 Production environment variables:
 
 ```env
-VITE_API_URL=https://api.agrisphere.com/api
+VITE_API_URL=https://api.kisanai.com/api
 VITE_ENABLE_ANALYTICS=true
 VITE_ENABLE_PWA=true
 ```

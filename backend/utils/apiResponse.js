@@ -1,5 +1,5 @@
 /**
- * API Response Utilities for AgriSphere
+ * API Response Utilities for KisanAI
  * Standardized response formats for consistent API communication
  * Includes success responses, error responses, and pagination helpers
  */
@@ -244,7 +244,7 @@ const healthCheck = (res, checks = {}) => {
  */
 const apiInfo = (res) => {
   const data = {
-    name: 'AgriSphere API',
+    name: 'KisanAI API',
     version: '1.0.0',
     description: 'AI-powered digital agronomist for smallholder farmers',
     documentation: '/docs',
@@ -257,8 +257,8 @@ const apiInfo = (res) => {
     },
     supportedLanguages: ['en', 'es', 'fr', 'hi', 'sw', 'am', 'yo', 'ha'],
     contact: {
-      support: 'support@agrisphere.com',
-      documentation: 'https://docs.agrisphere.com'
+      support: 'support@kisanai.com',
+      documentation: 'https://docs.kisanai.com'
     }
   };
 

@@ -95,7 +95,7 @@ const LanguageSelection = ({ onNext, onBack, onboardingData, updateData }) => {
             Choose Your Language
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Select your preferred language to get started with AgriSphere. 
+            Select your preferred language to get started with KisanAI. 
             We speak your language! 🗣️
           </p>
         </motion.div>

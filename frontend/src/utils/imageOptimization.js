@@ -1,5 +1,5 @@
 /**
- * Image optimization utilities for AgriSphere
+ * Image optimization utilities for KisanAI
  * Handles WebP conversion, compression, and responsive images
  */
 

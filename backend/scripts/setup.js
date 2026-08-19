@@ -1,5 +1,5 @@
 /**
- * Setup Script for AgriSphere Backend
+ * Setup Script for KisanAI Backend
  * Initializes database, creates indexes, and sets up initial data
  */
 
@@ -223,7 +223,7 @@ async function createSampleData() {
  */
 async function setup() {
   try {
-    logger.info('Starting AgriSphere backend setup...');
+    logger.info('Starting KisanAI backend setup...');
 
     // Check environment
     checkEnvironment();
@@ -239,7 +239,7 @@ async function setup() {
 
     logger.info('Setup completed successfully!');
     
-    console.log('\n✅ AgriSphere Backend Setup Complete!');
+    console.log('\n✅ KisanAI Backend Setup Complete!');
     console.log('\nNext steps:');
     console.log('1. Start the development server: npm run dev');
     console.log('2. Test the API endpoints: GET http://localhost:5000/health');

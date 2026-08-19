@@ -1,25 +1,25 @@
 /**
  * MongoDB Initialization Script for Docker
- * Sets up the AgriSphere database with proper user permissions
+ * Sets up the KisanAI database with proper user permissions
  */
 
 // Switch to admin database for user creation
 db = db.getSiblingDB('admin');
 
-// Create application user for AgriSphere database
+// Create application user for KisanAI database
 db.createUser({
-  user: 'agrisphere',
-  pwd: 'agrisphere123',
+  user: 'kisanai',
+  pwd: 'kisanai123',
   roles: [
     {
       role: 'readWrite',
-      db: 'agrisphere'
+      db: 'kisanai'
     }
   ]
 });
 
-// Switch to AgriSphere database
-db = db.getSiblingDB('agrisphere');
+// Switch to KisanAI database
+db = db.getSiblingDB('kisanai');
 
 // Create collections with validation (optional - Mongoose will create these)
 db.createCollection('users', {
@@ -60,4 +60,4 @@ db.diagnosishistories.createIndex({ farm: 1, fieldId: 1 });
 db.irrigationlogs.createIndex({ user: 1, createdAt: -1 });
 db.irrigationlogs.createIndex({ farm: 1, fieldId: 1 });
 
-print('AgriSphere database initialization completed successfully!');
+print('KisanAI database initialization completed successfully!');
